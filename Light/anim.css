@@ -1,0 +1,36 @@
+body {
+	margin: 0;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+svg {
+  width: 700px;
+  height: 300px;
+}
+.light {
+	transform-origin: 15% 18%;
+	transform:rotate(60deg)
+}
+.light {
+	transform-origin: 30% 0;
+	animation: 6s animate ease-in-out reverse infinite;
+}
+
+@keyframes animate {
+	0% {
+		transform-origin: 19% 16%;
+	transform: rotate(60deg)
+	}
+	50% {
+		transform-origin: 18% 7%;
+		transform: rotate(-80deg);
+	}
+	100% {
+		transform-origin: 19% 16%;
+	transform:rotate(60deg)
+	}
+}
